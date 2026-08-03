@@ -27,10 +27,11 @@ MAX_PUBLIC_UPLOAD_BYTES = 650 * 1024 * 1024
 SMALL_UPLOAD_LIMIT_BYTES = 32 * 1024 * 1024
 
 
-def app_directory() -> Path:
-    if os.getxattr(sys, "frozen", False):
-        return Path(sys.executable).resolve().parent
-    return Path(__file__).resolve().parent.parent
+def app_directory():
+    if getattr(sys, "frozen", False):
+        return Path(sys.executable).parent
+
+    return Path(__file__).resolve().parent
 
 
 BASE_DIR = app_directory()
