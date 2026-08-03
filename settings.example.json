@@ -1,0 +1,14 @@
+{
+  "api_key": "PASTE_YOUR_VIRUSTOTAL_API_KEY_HERE",
+  "upload_unknown_files": true,
+  "minimum_scanner_results": 10,
+  "request_interval_seconds": 16,
+  "analysis_poll_seconds": 30,
+  "analysis_timeout_minutes": 30,
+  "folder_poll_seconds": 2,
+  "scan_folder": "notchecked",
+  "clean_folder": "dowload",
+  "quarantine_folder": "quarantine",
+  "move_failed_to_quarantine": false,
+  "auto_start_monitoring": true
+}

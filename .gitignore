@@ -1,0 +1,10 @@
+settings.json
+virus_checker.log
+crash.log
+runtime/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.spec
