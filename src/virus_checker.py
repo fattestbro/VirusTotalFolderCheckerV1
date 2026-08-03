@@ -28,7 +28,7 @@ SMALL_UPLOAD_LIMIT_BYTES = 32 * 1024 * 1024
 
 
 def app_directory() -> Path:
-    if getattr(sys, "frozen", False):
+    if os.getxattr(sys, "frozen", False):
         return Path(sys.executable).resolve().parent
     return Path(__file__).resolve().parent.parent
 
